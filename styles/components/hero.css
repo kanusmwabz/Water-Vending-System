@@ -1,0 +1,185 @@
+.hero {
+  text-align: center;
+  padding-top: 240px;
+  padding-bottom: 240px;
+  background-image: url(/img/man-water.png), url(/img/white\ background.jpg);
+  background-size: 50vh, cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+
+  position: relative;
+}
+
+.hero__title {
+  /* padding-top: 1rem; */
+  color: var(--clr-light);
+  text-shadow: 0px 5px 5px var(--clr-peach);
+  text-transform: uppercase;
+  font-size: var(--size-4xl);
+  letter-spacing: -0.005em;
+}
+
+.hero__description {
+  display: none;
+
+  color: var(--clr-light);
+  padding: 1.5rem;
+  border: none;
+  border-radius: 15px;
+  margin-top: 2rem;
+  background-color: rgb(255, 200, 221, 0.7);
+  box-shadow: 0 10px 20px var(--clr-peach-light),
+    0 6px 6px var(--clr-peach-light);
+  max-width: 60ch;
+  font-size: var(--size-s);
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+.hero__motto {
+  display: none;
+
+  font-size: var(--size-s);
+  color: var(--clr-light);
+  border: none;
+  /* margin-top: 2rem; */
+  /* margin-bottom: 2rem; */
+  max-width: 60ch;
+  font-size: var(--size-s);
+  font-weight: 400;
+}
+
+.hero__btn {
+  margin-top: 10px;
+  font-size: var(--size-s);
+}
+
+.hero__intro {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 15%);
+}
+
+/* xs */
+/* @media (min-width: 475px) {
+} */
+
+/* s */
+/* @media (min-width: 640px) {
+} */
+
+/* m */
+@media (min-width: 768px) {
+  .hero {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+    background-size: 60vh, cover;
+    background-position: bottom right;
+    position: relative;
+  }
+
+  .hero__title {
+    font-size: var(--size-6xl);
+  }
+
+  .hero__description {
+    display: none;
+    max-width: 20ch;
+    font-size: var(--size-s);
+  }
+
+  .hero__motto {
+    display: block;
+    font-size: var(--size-base);
+    font-weight: 500;
+    color: var(--clr-light);
+    border: none;
+  }
+
+  .hero__btn {
+    margin-top: 10px;
+    font-size: var(--size-base);
+  }
+
+  .hero__intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(30%, 10%);
+  }
+
+  .hero__desc {
+    max-width: 40ch;
+    position: absolute;
+    top: 30%;
+    right: 0;
+    /* transform: translate(50%, -70%); */
+  }
+}
+
+/* l */
+@media (min-width: 1024px) {
+  .hero {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+    background-size: 60vh, cover;
+    background-position: bottom center;
+    position: relative;
+  }
+
+  .hero__title {
+    font-size: var(--size-7xl);
+  }
+
+  .hero__description {
+    display: block;
+    max-width: 60ch;
+    font-size: var(--size-l);
+  }
+
+  .hero__motto {
+    display: block;
+    font-size: var(--size-l);
+    font-weight: 500;
+    color: var(--clr-light);
+    border: none;
+  }
+
+  .hero__btn {
+    margin-top: 10px;
+    font-size: var(--size-base);
+  }
+
+  .hero__intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-30%, -50%);
+  }
+
+  .hero__desc {
+    max-width: 40ch;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    /* transform: translate(50%, -70%); */
+  }
+}
+
+/* xl */
+/* @media (min-width: 1280px) {
+  
+} */
+
+/* xxl */
+/* @media (min-width: 1536px) {
+} */

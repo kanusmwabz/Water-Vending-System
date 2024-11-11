@@ -1,0 +1,180 @@
+.hero {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15rem;
+  padding-bottom: 12rem;
+  gap: 20rem;
+
+  background-image: url(/img/man-water.png), url(/img/white\ background.jpg);
+  background-size: 50vh, cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+
+  position: relative;
+}
+
+.hero__title {
+  padding-top: 1rem;
+  color: var(--clr-light);
+  text-shadow: 0px 5px 5px var(--clr-peach);
+  text-transform: uppercase;
+  font-size: var(--size-4xl);
+  letter-spacing: -0.005em;
+}
+
+.hero__description {
+  display: none;
+
+  color: var(--clr-light);
+  padding: 1.5rem;
+  border: none;
+  border-radius: 15px;
+  margin-top: 2rem;
+  background-color: rgb(255, 200, 221, 0.7);
+  box-shadow: 0 10px 20px var(--clr-peach-light),
+    0 6px 6px var(--clr-peach-light);
+  max-width: 60ch;
+  font-size: var(--size-s);
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+.hero__motto {
+  display: none;
+
+  font-size: var(--size-s);
+  color: var(--clr-light);
+  border: none;
+  margin-top: 2rem;
+  max-width: 60ch;
+  font-size: var(--size-s);
+  font-weight: 400;
+}
+
+.hero__btn {
+  margin-top: 10px;
+  text-transform: capitalize;
+  font-size: var(--size-s);
+}
+
+.hero__intro {
+  /*   display: flex;
+    flex-direction: column;
+    align-items: center; */
+
+  position: absolute;
+  top: 1rem;
+}
+
+/* xs */
+@media (min-width: 475px) {
+  .hero__title {
+    font-size: var(--size-5xl);
+    letter-spacing: -0.005em;
+  }
+
+  .hero__description {
+    font-size: var(--size-base);
+    font-weight: 400;
+  }
+
+  .hero__btn {
+    font-size: var(--size-base);
+  }
+
+  .hero__motto {
+    font-size: var(--size-s);
+    color: var(--clr-light);
+    border: none;
+    border-radius: 15px;
+    margin-top: 2rem;
+    max-width: 60ch;
+    font-weight: 400;
+  }
+}
+
+/* s */
+/* @media (min-width: 640px) {
+  } */
+
+/* m */
+/* @media (min-width: 768px) {
+  
+  } */
+
+/* l */
+@media (min-width: 1024px) {
+  .hero {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center;
+      align-items: center; */
+
+    background-size: 65vh, cover;
+  }
+
+  /* .hero__intro {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    } */
+
+  .hero__title {
+    text-align: center;
+    font-size: var(--size-7xl);
+    letter-spacing: -0.005em;
+
+    word-break: keep-all;
+  }
+
+  .hero__description {
+    display: inline-block;
+    font-size: var(--size-l);
+    font-weight: 400;
+  }
+
+  .hero__btn {
+    font-size: var(--size-l);
+  }
+
+  .hero__motto {
+    display: block;
+    font-size: var(--size-xl);
+    color: var(--clr-light);
+    max-width: 60ch;
+    font-weight: 500;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .hero__title {
+    font-size: var(--size-9xl);
+    letter-spacing: -0.005em;
+  }
+
+  .hero__description {
+    font-size: var(--size-xl);
+    font-weight: 400;
+  }
+
+  .hero__btn {
+    font-size: var(--size-xl);
+  }
+
+  .hero__motto {
+    font-size: var(--size-2xl);
+    color: var(--clr-light);
+    max-width: 60ch;
+    font-weight: 500;
+  }
+}
+
+/* xxl */
+/* @media (min-width: 1536px) {
+  } */

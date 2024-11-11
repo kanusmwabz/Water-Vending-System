@@ -1,0 +1,111 @@
+.services {
+  padding: 60px 0;
+  background-color: rgb(255, 255, 255, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 3rem;
+
+  /* background-image: linear-gradient(to top, var(--clr-light), var(--clr-blue)); */
+}
+
+.services__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.services__title {
+  color: var(--clr-dark);
+  text-transform: uppercase;
+  font-size: var(--size-l);
+  letter-spacing: -0.05em;
+}
+
+.services__box {
+  width: 20rem;
+  height: 20rem;
+
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #111;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  transition: all ease-in-out 400ms;
+}
+
+.services__box:hover {
+  transform: scale(1.1);
+}
+
+.services__box--refill {
+  background-image: url(/img/refillmid.jpg);
+  background-position: center;
+}
+
+.services__box--purchase {
+  background-image: url(/img/purchase.jpg);
+}
+
+.services__box--deposit {
+  background-image: url(/img/deposit.jpg);
+  background-position: center;
+}
+
+.services__box h3 {
+  z-index: 100;
+  letter-spacing: -0.005em;
+}
+
+.services__box:hover .services__overlay {
+  opacity: 0;
+}
+
+.services__overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--clr-dark);
+  opacity: 0.5;
+  transition: all ease-in-out 400ms;
+}
+
+/* xs */
+/* @media (min-width: 475px) {
+} */
+
+/* s */
+/* @media (min-width: 640px) {
+} */
+
+/* m */
+/* @media (min-width: 768px) {
+} */
+
+/* l */
+@media (min-width: 1024px) {
+  .services__title {
+    font-size: var(--size-xl);
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .services__title {
+    font-size: var(--size-2xl);
+  }
+}
+
+/* xxl */
+/* @media (min-width: 1536px) {
+} */
