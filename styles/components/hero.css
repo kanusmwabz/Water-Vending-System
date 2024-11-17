@@ -3,7 +3,7 @@
   padding-top: 240px;
   padding-bottom: 240px;
   background-image: url(/img/man-water.png), url(/img/white\ background.jpg);
-  background-size: 50vh, cover;
+  background-size: 50%, cover;
   background-repeat: no-repeat;
   background-position: bottom center;
 
@@ -74,7 +74,7 @@
   .hero {
     padding-top: 15rem;
     padding-bottom: 15rem;
-    background-size: 60vh, cover;
+    background-size: 30%, cover;
     background-position: bottom right;
     position: relative;
   }
@@ -127,7 +127,7 @@
   .hero {
     padding-top: 15rem;
     padding-bottom: 15rem;
-    background-size: 60vh, cover;
+    background-size: 27%, cover;
     background-position: bottom center;
     position: relative;
   }

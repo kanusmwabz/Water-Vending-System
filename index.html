@@ -30,10 +30,15 @@
       <nav class="navigation">
         <ul class="header__menu">
           <li>
-            <a class="header__link" href="#home">Home</a>
+            <a class="header__link" href="#">Home</a>
           </li>
           <li>
-            <a class="header__link" href="#ourServices">Services</a>
+            <a
+              class="header__link"
+              href="/products/products.html"
+              target="_blank"
+              >Services</a
+            >
           </li>
           <li>
             <a class="header__link" href="#about">About</a>
@@ -58,7 +63,11 @@
               </svg>
             </button>
           </li>
-          <li><button class="header__login btn">Login</button></li>
+          <li>
+            <a href="signup.html" target="_blank"
+              ><button class="header__login btn">Sign Up</button></a
+            >
+          </li>
         </ul>
         <button class="header__bars">
           <svg
@@ -103,7 +112,9 @@
             </button>
           </li>
           <li>
-            <button class="mobile-nav__btn btn">Order Now</button>
+            <a href="/products/products.html"
+              ><button class="mobile-nav__btn btn">Order Now</button></a
+            >
           </li>
         </ul>
       </nav>
@@ -118,7 +129,12 @@
           </h1>
           <p class="hero__motto">Maji Safi Kwa Wote</p>
 
-          <a href="#" class="hero__btn btn">Order Now</a>
+          <a
+            href="/products/products.html"
+            class="hero__btn btn"
+            target="_blank"
+            >Order Now</a
+          >
         </div>
         <div class="hero__desc">
           <p class="hero__description">
@@ -129,13 +145,23 @@
       </section>
 
       <section class="services container" id="ourServices">
-        <div class="services__title"><h2>OUR SERVICES</h2></div>
+        <div class="services__title">
+          <h2>OUR SERVICES</h2>
+        </div>
         <div class="services__content">
-          <a href="#" class="services__box services__box--refill">
+          <a
+            href="/products/products.html"
+            target="_blank"
+            class="services__box services__box--refill"
+          >
             <div class="services__overlay"></div>
             <h3>Refill</h3>
           </a>
-          <a href="#" class="services__box services__box--purchase">
+          <a
+            href="/products/products.html"
+            target="_blank"
+            class="services__box services__box--purchase"
+          >
             <div class="services__overlay"></div>
             <h3>Purchase</h3>
           </a>
@@ -152,29 +178,19 @@
           <h4>company</h4>
           <ul>
             <li><a href="#">about us</a></li>
-            <li><a href="#">our services</a></li>
-            <li><a href="#">privacy policy</a></li>
+            <li>
+              <a href="/products/products.html" target="_blank">our services</a>
+            </li>
           </ul>
         </div>
         <div class="footer__col">
           <h4>get help</h4>
           <ul>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">shipping</a></li>
-            <li><a href="#">returns</a></li>
             <li><a href="#">order status</a></li>
             <li><a href="#">payment options</a></li>
           </ul>
         </div>
-        <!-- <div class="footer__col">
-          <h4>online shop</h4>
-          <ul>
-            <li><a href="#">watch</a></li>
-            <li><a href="#">bag</a></li>
-            <li><a href="#">shoes</a></li>
-            <li><a href="#">dress</a></li>
-          </ul>
-        </div> -->
+
         <div class="footer__col" id="contactUs">
           <h4>contact us</h4>
           <div class="social-links">
