@@ -8,6 +8,12 @@
       href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sofia&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/utils.css" />
@@ -17,6 +23,7 @@
     <link rel="stylesheet" href="styles/components/services.css" />
     <link rel="stylesheet" href="styles/components/footer.css" />
     <link rel="stylesheet" href="styles/components/mobile-nav.css" />
+    <link rel="stylesheet" href="styles/components/about.css" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -48,23 +55,24 @@
           </li>
           <li class="header__line"></li>
           <li>
-            <button class="header__user">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                class="size-6"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M18.685 19.097A9.723 9.723 0 0 0 21.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 0 0 3.065 7.097A9.716 9.716 0 0 0 12 21.75a9.716 9.716 0 0 0 6.685-2.653Zm-12.54-1.285A7.486 7.486 0 0 1 12 15a7.486 7.486 0 0 1 5.855 2.812A8.224 8.224 0 0 1 12 20.25a8.224 8.224 0 0 1-5.855-2.438ZM15.75 9a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </button>
+            <a href="/signup/login.html" target="_blank"
+              ><button class="header__user">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M18.685 19.097A9.723 9.723 0 0 0 21.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 0 0 3.065 7.097A9.716 9.716 0 0 0 12 21.75a9.716 9.716 0 0 0 6.685-2.653Zm-12.54-1.285A7.486 7.486 0 0 1 12 15a7.486 7.486 0 0 1 5.855 2.812A8.224 8.224 0 0 1 12 20.25a8.224 8.224 0 0 1-5.855-2.438ZM15.75 9a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+                    clip-rule="evenodd"
+                  />
+                </svg></button
+            ></a>
           </li>
           <li>
-            <a href="signup.html" target="_blank"
+            <a href="/signup/signup.html" target="_blank"
               ><button class="header__login btn">Sign Up</button></a
             >
           </li>
@@ -169,6 +177,34 @@
             <div class="services__overlay"></div>
             <h3>Deposit</h3>
           </a>
+        </div>
+      </section>
+
+      <section class="about container" id="about">
+        <div class="description">
+          <div class="about__title">
+            <h2>
+              What is <br /><span class="aqua"> Aqua Umoja </span><br /><span
+                class="cursive"
+                >about</span
+              >
+            </h2>
+          </div>
+          <div class="about__description">
+            <p>
+              Aqua Umoja is a brand dedicated to providing clean, safe, and
+              affordable drinking water through innovative water vending
+              solutions. The name <span class="peach">"Umoja</span>," meaning
+              "unity," reflects the company’s mission to bring communities
+              together by ensuring everyone has access to high-quality water.
+              Aqua Umoja operates state-of-the-art water vending kiosks and
+              machines that dispense purified water, offering a sustainable and
+              convenient alternative to traditional bottled water.
+            </p>
+          </div>
+        </div>
+        <div class="image">
+          <img src="img/kidsgetting water.jpg" alt="Kids drinking water" />
         </div>
       </section>
     </main>
